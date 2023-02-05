@@ -1,16 +1,26 @@
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-# my Mac ZSH mu-fuckin aliases
+#####################################
+# EXPORTS
+#####################################
+
+export EDITOR=vi
+
+# adding directory to PATH attempt
+export PATH=~/bin:"$PATH"
+export PATH=$(brew --prefix)/bin:$PATH
+
+#####################################
+# ALLIASES 
+#####################################
+
+# my Mac ZSH aliases
 alias ll='ls -laF'
 
 # aliases with pathanmes
 alias ec="$EDITOR $HOME/.zshrc" 
 alias sc="source $HOME/.zshrc"
-
-# adding directory to PATH attempt
-export PATH=~/bin:"$PATH"
-export PATH=$(brew --prefix)/bin:$PATH
 
 # shell function for git flow 
 gitf () {
@@ -30,7 +40,3 @@ fi
 # alias from zsh guide
 alias %=' '
 
-# Export practice
-EDITOR=/usr/bin/vi
-
-export EDITOR
