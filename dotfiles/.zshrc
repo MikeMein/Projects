@@ -18,6 +18,10 @@ export PATH=$(brew --prefix)/bin:$PATH
 # my Mac ZSH aliases
 alias ll='ls -laF'
 
+# Idea from zsh guide for copying commands with current user symbol
+alias %=' '
+alias $=' '
+alias \#='sudo'
 # aliases with pathanmes
 alias ec="$EDITOR $HOME/.zshrc" 
 alias sc="source $HOME/.zshrc"
@@ -37,6 +41,4 @@ then
   compinit
 fi
 
-# alias from zsh guide
-alias %=' '
 
