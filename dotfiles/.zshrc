@@ -20,7 +20,7 @@ alias ll='ls -laF'
 
 # Idea from zsh guide for copying commands with current user symbol
 alias %=' '
-alias $=' '
+alias \$=' '
 alias \#='sudo'
 # aliases with pathanmes
 alias ec="$EDITOR $HOME/.zshrc" 
