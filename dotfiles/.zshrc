@@ -27,11 +27,15 @@ alias ec="$EDITOR $HOME/.zshrc"
 alias sc="source $HOME/.zshrc"
 
 # shell function for git flow 
-gitf () {
-  echo "Git Hub flow function experiment"
+gicm () {
   git add .
+  git commit -m "$1"
 }
-
+gipu () {
+  git add .
+  git commit -m "$1"
+  git push
+}
 # Homebrew zsh pathname completion without Oh-My-Zsh installed yet
 if type brew &>/dev/null
 then
